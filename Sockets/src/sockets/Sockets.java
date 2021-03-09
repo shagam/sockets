@@ -1,5 +1,5 @@
 
-//package com.journaldev.socket;
+//eli package com.journaldev.socket;
 package sockets;
 
 

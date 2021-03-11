@@ -32,7 +32,7 @@ public class Sockets {
     public static void main(String args[]) throws IOException, ClassNotFoundException,UnknownHostException {
   
         if (args.length != 1) {
-            System.out.println("Error: Need argument: server | client | both");
+            System.out.println(" Error: Need argument: server | client | both");
             System.exit(-1);
         }
         String cmd = args [0];

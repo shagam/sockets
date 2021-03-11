@@ -32,9 +32,11 @@ public class Sockets {
     public static void main(String args[]) throws IOException, ClassNotFoundException,UnknownHostException {
   
         if (args.length != 1) {
-            System.out.println("Error: Need argument: server | client | both");
+            System.out.println("\033[32m   Error: Need argument: server | client | both \033[0m blank");
             System.exit(-1);
         }
+        //else
+            //System.out.println("\033[32m  " + args [0]);
         String cmd = args [0];
         cmdChar = cmd.charAt(0);
         if (cmdChar == 's') {

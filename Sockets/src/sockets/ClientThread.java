@@ -31,7 +31,8 @@ public class ClientThread extends Thread {
         for(int i=0; i<5; i++){
             //establish socket connection to server
             String hostName = host.getHostName();
-            hostName = "212.235.115.193"; // kaminsky external ip
+            if (Sockets.cmdChar == 'c')
+                hostName = "212.235.115.193"; // kaminsky external ip
             socket = new Socket(hostName, Sockets.port);
             //write to socket using ObjectOutputStream
                //write to socket using ObjectOutputStream

@@ -24,7 +24,7 @@ import java.net.Socket;
   
 public class Sockets {
     public static int port = 8022;
-    
+    public static char cmdChar;
     /**
      * @param args the command line arguments
      */
@@ -36,7 +36,7 @@ public class Sockets {
             System.exit(-1);
         }
         String cmd = args [0];
-        char cmdChar = cmd.charAt(0);
+        cmdChar = cmd.charAt(0);
         if (cmdChar == 's') {
             Thread t1 = new Thread(new ServerThread (), "t1");
             System.out.println("Starting Runnable Server thread");
